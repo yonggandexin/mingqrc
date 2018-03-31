@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MQSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-ZY-BG8">
+                    <rect key="frame" x="0.0" y="10" width="465" height="73"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="0.79481183980000003" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knx-gG-SoM">
+                    <rect key="frame" x="365" y="10" width="100" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Kde-fC-0Km"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0rn-ZY-BG8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1h4-i7-0HG"/>
+                <constraint firstItem="knx-gG-SoM" firstAttribute="top" secondItem="0rn-ZY-BG8" secondAttribute="top" id="4VA-KQ-48f"/>
+                <constraint firstItem="0rn-ZY-BG8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="LIp-N8-Lqg"/>
+                <constraint firstItem="knx-gG-SoM" firstAttribute="trailing" secondItem="0rn-ZY-BG8" secondAttribute="trailing" id="Z2E-wS-Fg1"/>
+                <constraint firstAttribute="trailing" secondItem="0rn-ZY-BG8" secondAttribute="trailing" id="aGV-Id-9Cf"/>
+                <constraint firstAttribute="bottom" secondItem="0rn-ZY-BG8" secondAttribute="bottom" id="ltM-b3-Svh"/>
+                <constraint firstItem="knx-gG-SoM" firstAttribute="bottom" secondItem="0rn-ZY-BG8" secondAttribute="bottom" id="pzo-Tn-w6I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleL" destination="0rn-ZY-BG8" id="Apl-1W-nIW"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="-68"/>
+        </view>
+    </objects>
+</document>

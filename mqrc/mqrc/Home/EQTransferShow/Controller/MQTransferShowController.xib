@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MQTransferShowController">
+            <connections>
+                <outlet property="adressBtn" destination="owK-Hn-xV8" id="pZj-0h-IA5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8j-p6-bCf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owK-Hn-xV8" customClass="AdressBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="地区" image="position">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="regionBtnClicked:" destination="-1" eventType="touchUpInside" id="u4p-M2-Dbr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="72J-1N-bKI"/>
+                        <constraint firstAttribute="trailing" secondItem="owK-Hn-xV8" secondAttribute="trailing" id="9Ih-cX-zmj"/>
+                        <constraint firstAttribute="bottom" secondItem="owK-Hn-xV8" secondAttribute="bottom" constant="0.5" id="Cpt-Si-hEB"/>
+                        <constraint firstItem="owK-Hn-xV8" firstAttribute="top" secondItem="k8j-p6-bCf" secondAttribute="top" id="WlP-uf-ETA"/>
+                        <constraint firstItem="owK-Hn-xV8" firstAttribute="leading" secondItem="k8j-p6-bCf" secondAttribute="leading" id="kbo-2w-Vhi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k8j-p6-bCf" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="eK5-Ef-VSS"/>
+                <constraint firstItem="k8j-p6-bCf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pAQ-g5-YkI"/>
+                <constraint firstItem="k8j-p6-bCf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sYO-JP-FM1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-33" y="-294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="position" width="40" height="40"/>
+    </resources>
+</document>

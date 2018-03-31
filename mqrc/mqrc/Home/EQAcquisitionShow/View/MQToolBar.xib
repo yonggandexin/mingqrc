@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MQToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="672" height="134"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6o-gN-fGb" customClass="HeaderBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="224" height="134"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="default_man" backgroundImage="frame">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="default_man"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En5-0s-8Mf" customClass="BarButton">
+                    <rect key="frame" x="224" y="0.0" width="224" height="134"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="收藏" image="collection" backgroundImage="frame">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="shoucang" backgroundImage="frame"/>
+                    <connections>
+                        <action selector="CollectionClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="P1E-qz-JZz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-F0-adb" customClass="BarButton">
+                    <rect key="frame" x="448" y="0.0" width="224" height="134"/>
+                    <color key="backgroundColor" red="0.0039215686269999999" green="0.62352941179999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="打电话" image="call" backgroundImage="frame"/>
+                    <connections>
+                        <action selector="tellBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ihw-z2-9ZQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8eK-F0-adb" secondAttribute="bottom" id="A4y-me-9zh"/>
+                <constraint firstItem="En5-0s-8Mf" firstAttribute="width" secondItem="a6o-gN-fGb" secondAttribute="width" id="B46-Ji-G4C"/>
+                <constraint firstItem="a6o-gN-fGb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EgN-BI-qLe"/>
+                <constraint firstItem="En5-0s-8Mf" firstAttribute="leading" secondItem="a6o-gN-fGb" secondAttribute="trailing" id="L1F-Jb-GKG"/>
+                <constraint firstItem="En5-0s-8Mf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OEG-e8-Yzo"/>
+                <constraint firstItem="8eK-F0-adb" firstAttribute="leading" secondItem="En5-0s-8Mf" secondAttribute="trailing" id="RdT-jV-DbU"/>
+                <constraint firstItem="a6o-gN-fGb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z29-Xu-amg"/>
+                <constraint firstAttribute="bottom" secondItem="En5-0s-8Mf" secondAttribute="bottom" id="ei8-dM-Dsr"/>
+                <constraint firstAttribute="bottom" secondItem="a6o-gN-fGb" secondAttribute="bottom" id="h5p-DJ-gMu"/>
+                <constraint firstItem="8eK-F0-adb" firstAttribute="width" secondItem="En5-0s-8Mf" secondAttribute="width" id="hZJ-g9-cUd"/>
+                <constraint firstAttribute="trailing" secondItem="8eK-F0-adb" secondAttribute="trailing" id="qBd-dy-OYd"/>
+                <constraint firstItem="8eK-F0-adb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="txI-WX-ZM2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ContactBtn" destination="a6o-gN-fGb" id="TWw-SU-Ycq"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call" width="30" height="32"/>
+        <image name="collection" width="26" height="26"/>
+        <image name="default_man" width="40" height="40"/>
+        <image name="frame" width="400" height="50"/>
+        <image name="shoucang" width="23" height="22"/>
+    </resources>
+</document>

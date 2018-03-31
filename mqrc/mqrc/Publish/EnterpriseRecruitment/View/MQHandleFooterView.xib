@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MQHandleFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="633"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-iq-rTC">
+                    <rect key="frame" x="10" y="39" width="484" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="1mm-Dt-TMX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手持身份证照片：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLV-hS-Xma">
+                    <rect key="frame" x="22.5" y="12" width="114.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handleBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Hua-yt-ikr">
+                    <rect key="frame" x="20" y="49" width="464" height="240"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haV-PG-Zhn">
+                    <rect key="frame" x="20" y="304" width="464" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1WI-Aw-3gb"/>
+                    </constraints>
+                    <state key="normal" title="上传照片" backgroundImage="Unfilled">
+                        <color key="titleColor" red="0.0039215686269999999" green="0.62352941179999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="photoBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="VCW-XM-Tqq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：您的身份证信息仅用于审核，不会向第三方透露，请放心上传" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kut-cT-xiF">
+                    <rect key="frame" x="20" y="359" width="464" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tq-Cl-VT9">
+                    <rect key="frame" x="10" y="10" width="7.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.8934394121" green="0.31352406830000001" blue="0.41571578100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z59-R2-N73">
+                    <rect key="frame" x="20" y="424" width="464" height="45"/>
+                    <state key="normal" title="提交审核" backgroundImage="Fill">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kut-cT-xiF" firstAttribute="trailing" secondItem="haV-PG-Zhn" secondAttribute="trailing" id="6Rg-lm-K1t"/>
+                <constraint firstItem="kut-cT-xiF" firstAttribute="leading" secondItem="haV-PG-Zhn" secondAttribute="leading" id="6rO-Fz-Stc"/>
+                <constraint firstItem="aLV-hS-Xma" firstAttribute="leading" secondItem="9tq-Cl-VT9" secondAttribute="trailing" constant="5" id="80C-xw-X3g"/>
+                <constraint firstItem="FbU-iq-rTC" firstAttribute="top" secondItem="aLV-hS-Xma" secondAttribute="bottom" constant="10" id="B2M-a6-x2N"/>
+                <constraint firstItem="z59-R2-N73" firstAttribute="height" secondItem="haV-PG-Zhn" secondAttribute="height" id="B59-OV-EZV"/>
+                <constraint firstItem="z59-R2-N73" firstAttribute="top" secondItem="kut-cT-xiF" secondAttribute="bottom" constant="50" id="DMU-yB-usi"/>
+                <constraint firstItem="9tq-Cl-VT9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="H2y-2W-qUt"/>
+                <constraint firstItem="Hua-yt-ikr" firstAttribute="bottom" secondItem="FbU-iq-rTC" secondAttribute="bottom" constant="-10" id="KjO-qA-QSw"/>
+                <constraint firstItem="z59-R2-N73" firstAttribute="width" secondItem="haV-PG-Zhn" secondAttribute="width" id="KkE-jM-NfX"/>
+                <constraint firstItem="Hua-yt-ikr" firstAttribute="trailing" secondItem="FbU-iq-rTC" secondAttribute="trailing" constant="-10" id="Oi1-p7-bGb"/>
+                <constraint firstItem="haV-PG-Zhn" firstAttribute="leading" secondItem="Hua-yt-ikr" secondAttribute="leading" id="QCi-Rb-kji"/>
+                <constraint firstItem="z59-R2-N73" firstAttribute="centerX" secondItem="haV-PG-Zhn" secondAttribute="centerX" id="WSv-lI-nMY"/>
+                <constraint firstItem="Hua-yt-ikr" firstAttribute="top" secondItem="FbU-iq-rTC" secondAttribute="top" constant="10" id="XaX-oK-AJL"/>
+                <constraint firstItem="kut-cT-xiF" firstAttribute="top" secondItem="haV-PG-Zhn" secondAttribute="bottom" constant="10" id="dX2-Oe-lvO"/>
+                <constraint firstItem="9tq-Cl-VT9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="fVy-Km-teb"/>
+                <constraint firstItem="Hua-yt-ikr" firstAttribute="leading" secondItem="FbU-iq-rTC" secondAttribute="leading" constant="10" id="kOG-bb-vuv"/>
+                <constraint firstItem="haV-PG-Zhn" firstAttribute="trailing" secondItem="Hua-yt-ikr" secondAttribute="trailing" id="mVZ-g3-vRe"/>
+                <constraint firstItem="aLV-hS-Xma" firstAttribute="centerY" secondItem="9tq-Cl-VT9" secondAttribute="centerY" id="p5v-tR-8ud"/>
+                <constraint firstItem="FbU-iq-rTC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="tcd-d4-nTb"/>
+                <constraint firstAttribute="trailing" secondItem="FbU-iq-rTC" secondAttribute="trailing" constant="10" id="xlf-71-1UC"/>
+                <constraint firstItem="haV-PG-Zhn" firstAttribute="top" secondItem="FbU-iq-rTC" secondAttribute="bottom" constant="5" id="ytA-PA-Tcn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="finishBtn" destination="z59-R2-N73" id="17z-ea-gD4"/>
+                <outlet property="photoH" destination="1mm-Dt-TMX" id="H88-Cs-TtD"/>
+                <outlet property="photoV" destination="Hua-yt-ikr" id="9YJ-c2-QOF"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="-131.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Fill" width="10" height="25"/>
+        <image name="Unfilled" width="10" height="9"/>
+        <image name="frame" width="400" height="50"/>
+        <image name="handleBackGround" width="400" height="250"/>
+    </resources>
+</document>

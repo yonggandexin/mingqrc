@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="MQAlreadyCerCell">
+            <rect key="frame" x="0.0" y="0.0" width="511" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="511" height="194.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Roundedrectangle" translatesAutoresizingMaskIntoConstraints="NO" id="xhB-hs-jJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="511" height="194.5"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffz-pg-TRA">
+                        <rect key="frame" x="20" y="45" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Kn3-OK-wUo"/>
+                            <constraint firstAttribute="height" constant="60" id="VDm-cm-iYk"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="camera"/>
+                        <connections>
+                            <action selector="photoClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JkR-v1-Nsa"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mRS-3h-Yog">
+                        <rect key="frame" x="90" y="45" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="2aq-Qb-aJk"/>
+                            <constraint firstAttribute="width" constant="60" id="KAv-W3-Qb6"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-Sn-i4g">
+                        <rect key="frame" x="142" y="37" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="hRu-Nw-8Nf"/>
+                            <constraint firstAttribute="height" constant="16" id="rRZ-F2-7n6"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="image_delete"/>
+                        <connections>
+                            <action selector="disBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HUT-WA-UVs"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qb-eG-GMh">
+                        <rect key="frame" x="20" y="10" width="481" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="sKx-RX-CvI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xhB-hs-jJ9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0E4-An-rb1"/>
+                    <constraint firstItem="ffz-pg-TRA" firstAttribute="top" secondItem="8qb-eG-GMh" secondAttribute="bottom" constant="10" id="A0F-av-nRK"/>
+                    <constraint firstAttribute="trailing" secondItem="8qb-eG-GMh" secondAttribute="trailing" constant="10" id="Cm9-Xo-ehF"/>
+                    <constraint firstItem="mRS-3h-Yog" firstAttribute="top" secondItem="ffz-pg-TRA" secondAttribute="top" id="EUf-Rx-nSW"/>
+                    <constraint firstAttribute="bottom" secondItem="xhB-hs-jJ9" secondAttribute="bottom" id="Z9R-WZ-bqc"/>
+                    <constraint firstItem="yh4-Sn-i4g" firstAttribute="top" secondItem="mRS-3h-Yog" secondAttribute="top" constant="-8" id="Zdy-Ie-HDG"/>
+                    <constraint firstItem="8qb-eG-GMh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="b90-nO-Pr5"/>
+                    <constraint firstItem="mRS-3h-Yog" firstAttribute="leading" secondItem="ffz-pg-TRA" secondAttribute="trailing" constant="10" id="cEh-Cn-AQw"/>
+                    <constraint firstItem="yh4-Sn-i4g" firstAttribute="trailing" secondItem="mRS-3h-Yog" secondAttribute="trailing" constant="8" id="cJL-Co-KvG"/>
+                    <constraint firstItem="ffz-pg-TRA" firstAttribute="leading" secondItem="8qb-eG-GMh" secondAttribute="leading" id="iuW-UB-q9i"/>
+                    <constraint firstItem="xhB-hs-jJ9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ojn-Wc-Jia"/>
+                    <constraint firstAttribute="trailing" secondItem="xhB-hs-jJ9" secondAttribute="trailing" id="qRW-M8-Xde"/>
+                    <constraint firstItem="8qb-eG-GMh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tK2-ts-mAc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="disBtn" destination="yh4-Sn-i4g" id="smC-CB-3kV"/>
+                <outlet property="imageV" destination="mRS-3h-Yog" id="Bze-Rb-ULI"/>
+                <outlet property="titleL" destination="8qb-eG-GMh" id="Gdr-V6-RJt"/>
+            </connections>
+            <point key="canvasLocation" x="-30.5" y="127.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Roundedrectangle" width="400" height="100"/>
+        <image name="camera" width="80" height="80"/>
+        <image name="image_delete" width="13" height="13"/>
+    </resources>
+</document>

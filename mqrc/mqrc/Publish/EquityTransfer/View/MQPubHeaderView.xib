@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MQPubHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="271"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing" translatesAutoresizingMaskIntoConstraints="NO" id="B7J-Uh-g1T">
+                    <rect key="frame" x="0.0" y="0.0" width="415" height="271"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9c-67-gTl" customClass="MQHeaderBtn">
+                    <rect key="frame" x="162.5" y="90.5" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="UaT-wz-voD"/>
+                        <constraint firstAttribute="height" constant="90" id="n3Y-8f-GC2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="请上传营业执照" image="transferCamera">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="photClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="aCI-de-8fn"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FmK-0l-cAD">
+                    <rect key="frame" x="30" y="0.0" width="355" height="271"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l9c-67-gTl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3hX-NM-1CJ"/>
+                <constraint firstItem="l9c-67-gTl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6q4-yK-ymq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B7J-Uh-g1T" secondAttribute="bottom" id="8sm-rN-GgP"/>
+                <constraint firstItem="FmK-0l-cAD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ksp-6f-QqI"/>
+                <constraint firstItem="B7J-Uh-g1T" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OG0-4n-GNb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FmK-0l-cAD" secondAttribute="trailing" constant="30" id="YNe-zK-zeO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B7J-Uh-g1T" secondAttribute="trailing" id="cie-gM-YVS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FmK-0l-cAD" secondAttribute="bottom" id="fqR-Pa-K5y"/>
+                <constraint firstItem="FmK-0l-cAD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="ueE-T7-Rb3"/>
+                <constraint firstItem="B7J-Uh-g1T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vCb-mc-P7C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backImage" destination="B7J-Uh-g1T" id="xjz-CO-5AI"/>
+                <outlet property="btnCentX" destination="6q4-yK-ymq" id="DkV-VV-Jtt"/>
+                <outlet property="btnCentY" destination="3hX-NM-1CJ" id="RlW-Nf-h2q"/>
+                <outlet property="photoBtn" destination="l9c-67-gTl" id="rdz-Jr-Ax2"/>
+                <outlet property="photoImgV" destination="FmK-0l-cAD" id="olT-GD-lzl"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="251.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beijing" width="640" height="480"/>
+        <image name="transferCamera" width="80" height="80"/>
+    </resources>
+</document>

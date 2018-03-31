@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MQHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Talent training background" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-2s-w3p">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="231"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WUo-qa-mMs">
+                        <rect key="frame" x="70.5" y="58" width="140" height="115.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97m-OA-NZa">
+                        <rect key="frame" x="0.0" y="173.5" width="280" height="57.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WUo-qa-mMs" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0Kc-yk-Qx1"/>
+                <constraint firstAttribute="bottom" secondItem="uNg-2s-w3p" secondAttribute="bottom" id="BSS-s5-g1Z"/>
+                <constraint firstItem="97m-OA-NZa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BmT-KF-Pgd"/>
+                <constraint firstItem="uNg-2s-w3p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cud-WP-awf"/>
+                <constraint firstItem="WUo-qa-mMs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dcr-Pa-Pfg"/>
+                <constraint firstAttribute="trailing" secondItem="uNg-2s-w3p" secondAttribute="trailing" id="FQe-tW-8g1"/>
+                <constraint firstAttribute="trailing" secondItem="97m-OA-NZa" secondAttribute="trailing" id="JVR-kd-SXc"/>
+                <constraint firstItem="97m-OA-NZa" firstAttribute="top" secondItem="WUo-qa-mMs" secondAttribute="bottom" id="YmI-mt-oji"/>
+                <constraint firstAttribute="bottom" secondItem="97m-OA-NZa" secondAttribute="bottom" id="doJ-gt-Vdq"/>
+                <constraint firstItem="uNg-2s-w3p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="myK-oS-mME"/>
+                <constraint firstItem="WUo-qa-mMs" firstAttribute="width" secondItem="uNg-2s-w3p" secondAttribute="width" multiplier="0.5" id="szx-bT-O6c"/>
+                <constraint firstItem="WUo-qa-mMs" firstAttribute="height" secondItem="uNg-2s-w3p" secondAttribute="height" multiplier="0.5" id="xTA-cR-0wY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="280" height="231"/>
+            <connections>
+                <outlet property="backImageV" destination="uNg-2s-w3p" id="LNm-vz-sBM"/>
+                <outlet property="centerImg" destination="WUo-qa-mMs" id="PWe-z2-oFo"/>
+                <outlet property="titleL" destination="97m-OA-NZa" id="42b-Zz-fbR"/>
+            </connections>
+            <point key="canvasLocation" x="-216" y="42.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Talent training background" width="165" height="165"/>
+    </resources>
+</document>

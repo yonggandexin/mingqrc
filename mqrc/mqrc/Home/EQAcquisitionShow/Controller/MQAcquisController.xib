@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MQAcquisController">
+            <connections>
+                <outlet property="adressBtn" destination="FHK-Oc-0M5" id="hLd-4v-d74"/>
+                <outlet property="view" destination="SCH-uy-ldt" id="2qE-AM-syp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SCH-uy-ldt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Pt-89-ovp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHK-Oc-0M5" customClass="AdressBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="地区" image="position">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selecTedAddress:" destination="-1" eventType="touchUpInside" id="M5r-9C-fYx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="IwA-nM-dhC"/>
+                        <constraint firstAttribute="bottom" secondItem="FHK-Oc-0M5" secondAttribute="bottom" constant="0.5" id="WDf-1X-m5V"/>
+                        <constraint firstItem="FHK-Oc-0M5" firstAttribute="leading" secondItem="7Pt-89-ovp" secondAttribute="leading" id="byA-CO-gsc"/>
+                        <constraint firstItem="FHK-Oc-0M5" firstAttribute="top" secondItem="7Pt-89-ovp" secondAttribute="top" id="c6i-0A-eAy"/>
+                        <constraint firstAttribute="trailing" secondItem="FHK-Oc-0M5" secondAttribute="trailing" id="gpZ-Kl-Uzl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Pt-89-ovp" firstAttribute="top" secondItem="SCH-uy-ldt" secondAttribute="top" id="KWd-Gu-31g"/>
+                <constraint firstAttribute="trailing" secondItem="7Pt-89-ovp" secondAttribute="trailing" id="T68-Mv-CtR"/>
+                <constraint firstItem="7Pt-89-ovp" firstAttribute="leading" secondItem="SCH-uy-ldt" secondAttribute="leading" id="kVz-7C-oie"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="position" width="40" height="40"/>
+    </resources>
+</document>

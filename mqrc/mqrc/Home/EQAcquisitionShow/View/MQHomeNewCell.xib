@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="MQHomeNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTf-r7-vOx">
+                        <rect key="frame" x="80" y="19.5" width="1" height="20"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="LFl-jn-emk"/>
+                            <constraint firstAttribute="height" constant="20" id="RkP-Qk-dm7"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MingQiTouTiao" translatesAutoresizingMaskIntoConstraints="NO" id="Cff-P4-e1n">
+                        <rect key="frame" x="10" y="23" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="TDd-CS-I82"/>
+                            <constraint firstAttribute="height" constant="20" id="kQu-Ei-glZ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-Q2-AqL" customClass="SDCycleScrollView">
+                        <rect key="frame" x="81" y="0.0" width="405" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Dbw-Q2-AqL" secondAttribute="trailing" constant="10" id="1qk-O9-cAJ"/>
+                    <constraint firstItem="Cff-P4-e1n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IeE-ym-bkc"/>
+                    <constraint firstAttribute="bottom" secondItem="Dbw-Q2-AqL" secondAttribute="bottom" id="KgY-v9-C3w"/>
+                    <constraint firstItem="VTf-r7-vOx" firstAttribute="centerY" secondItem="Dbw-Q2-AqL" secondAttribute="centerY" id="ULU-x8-z4a"/>
+                    <constraint firstItem="Dbw-Q2-AqL" firstAttribute="leading" secondItem="VTf-r7-vOx" secondAttribute="trailing" id="cXr-Wd-tAu"/>
+                    <constraint firstItem="Cff-P4-e1n" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="3" id="eDE-Xs-jGe"/>
+                    <constraint firstItem="Dbw-Q2-AqL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gUk-yd-gNh"/>
+                    <constraint firstItem="VTf-r7-vOx" firstAttribute="leading" secondItem="Cff-P4-e1n" secondAttribute="trailing" constant="10" id="oSg-Kl-wAR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="newsView" destination="Dbw-Q2-AqL" id="Ubq-tX-Byd"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MingQiTouTiao" width="58" height="20"/>
+    </resources>
+</document>

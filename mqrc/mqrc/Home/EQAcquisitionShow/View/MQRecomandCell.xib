@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="307" id="KGk-i7-Jjw" customClass="MQRecomandCell">
+            <rect key="frame" x="0.0" y="0.0" width="581" height="307"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="581" height="306.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carTest" translatesAutoresizingMaskIntoConstraints="NO" id="3VU-XF-MO5">
+                        <rect key="frame" x="10" y="100" width="276" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="carTest" translatesAutoresizingMaskIntoConstraints="NO" id="Xs1-dY-uPv">
+                        <rect key="frame" x="1" y="13" width="275.5" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="h21-pl-LuC"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="carTest" translatesAutoresizingMaskIntoConstraints="NO" id="veY-LE-cCT">
+                        <rect key="frame" x="286" y="13" width="275.5" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="carTest" translatesAutoresizingMaskIntoConstraints="NO" id="xhM-5i-nmE">
+                        <rect key="frame" x="286" y="103" width="275.5" height="80"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xhM-5i-nmE" firstAttribute="leading" secondItem="veY-LE-cCT" secondAttribute="leading" id="1b8-hs-ca7"/>
+                    <constraint firstItem="3VU-XF-MO5" firstAttribute="leading" secondItem="Xs1-dY-uPv" secondAttribute="leading" id="62i-Rd-3bP"/>
+                    <constraint firstItem="3VU-XF-MO5" firstAttribute="top" secondItem="Xs1-dY-uPv" secondAttribute="bottom" constant="10" id="CAX-gu-a8V"/>
+                    <constraint firstItem="Xs1-dY-uPv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FAq-Ty-KDm"/>
+                    <constraint firstItem="veY-LE-cCT" firstAttribute="height" secondItem="Xs1-dY-uPv" secondAttribute="height" id="Gx4-FK-s9t"/>
+                    <constraint firstItem="xhM-5i-nmE" firstAttribute="height" secondItem="3VU-XF-MO5" secondAttribute="height" id="Ip0-UA-Niw"/>
+                    <constraint firstItem="3VU-XF-MO5" firstAttribute="height" secondItem="Xs1-dY-uPv" secondAttribute="height" id="Uyh-a4-eE0"/>
+                    <constraint firstItem="Xs1-dY-uPv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="a8S-3G-keB"/>
+                    <constraint firstItem="veY-LE-cCT" firstAttribute="leading" secondItem="Xs1-dY-uPv" secondAttribute="trailing" constant="10" id="bya-lj-ILd"/>
+                    <constraint firstAttribute="trailing" secondItem="veY-LE-cCT" secondAttribute="trailing" constant="10" id="cNW-a1-kaq"/>
+                    <constraint firstItem="xhM-5i-nmE" firstAttribute="top" secondItem="3VU-XF-MO5" secondAttribute="top" id="ciT-OB-3aT"/>
+                    <constraint firstItem="3VU-XF-MO5" firstAttribute="width" secondItem="Xs1-dY-uPv" secondAttribute="width" id="dYu-G8-rK2"/>
+                    <constraint firstItem="veY-LE-cCT" firstAttribute="width" secondItem="Xs1-dY-uPv" secondAttribute="width" id="gtN-Gf-Otz"/>
+                    <constraint firstItem="veY-LE-cCT" firstAttribute="top" secondItem="Xs1-dY-uPv" secondAttribute="top" id="wd8-82-3rF"/>
+                    <constraint firstItem="xhM-5i-nmE" firstAttribute="width" secondItem="3VU-XF-MO5" secondAttribute="width" id="wdw-yz-cqi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-133.5" y="143.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="carTest" width="200" height="130"/>
+    </resources>
+</document>
